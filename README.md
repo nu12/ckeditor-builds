@@ -1,8 +1,6 @@
 # Ckeditor::Builds
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ckeditor/builds`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Gem to add CKEditor5 builds, for more information of usage, please visit https://docs.ckeditor.com/ckeditor5/latest/
 
 ## Installation
 
@@ -22,11 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-Editor app/assets/javascript/application.js
+Edit app/assets/javascript/application.js
 
 ### Classic
 ```ruby
+(...)
 //= require ckeditor-classic
+(...)
 
 ClassicEditor
 .create( document.querySelector( '#editor' ) )
@@ -46,7 +46,9 @@ ClassicEditor
 
 ### Inline
 ```ruby
-//= require ckeditor-classic
+(...)
+//= require ckeditor-inline
+(...)
 
 InlineEditor
 .create( document.querySelector( '#editor' ) )
@@ -66,9 +68,11 @@ InlineEditor
 
 ### Balloon
 ```ruby
-//= require ckeditor-classic
+(...)
+//= require ckeditor-balloon
+(...)
 
-BaloonEditor
+BalloonEditor
 .create( document.querySelector( '#editor' ) )
 .then( editor => {
     console.log( editor );
