@@ -22,7 +22,67 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Editor app/assets/javascript/application.js
+
+### Classic
+```ruby
+//= require ckeditor-classic
+
+ClassicEditor
+.create( document.querySelector( '#editor' ) )
+.then( editor => {
+    console.log( editor );
+} )
+.catch( error => {
+    console.error( error );
+} );
+```
+
+```html
+<textarea name="content" id="editor">
+    <p>Here goes the initial content of the editor.</p>
+</textarea>
+```
+
+### Inline
+```ruby
+//= require ckeditor-classic
+
+InlineEditor
+.create( document.querySelector( '#editor' ) )
+.then( editor => {
+    console.log( editor );
+} )
+.catch( error => {
+    console.error( error );
+} );
+```
+
+```html
+<div id="editor">
+    <p>Here goes the initial content of the editor.</p>
+</div>
+```
+
+### Balloon
+```ruby
+//= require ckeditor-classic
+
+BaloonEditor
+.create( document.querySelector( '#editor' ) )
+.then( editor => {
+    console.log( editor );
+} )
+.catch( error => {
+    console.error( error );
+} );
+```
+
+```html
+<div id="editor">
+    <p>Here goes the initial content of the editor.</p>
+</div>
+```
 
 ## Development
 
@@ -32,4 +92,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ckeditor-builds.
+Bug reports and pull requests are welcome on GitHub at https://github.com/nu12/ckeditor-builds.
