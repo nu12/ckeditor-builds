@@ -1,5 +1,5 @@
 module Ckeditor
   module Builds
-    VERSION = "10.0.1"
+    VERSION = "10.1.0"
   end
 end
