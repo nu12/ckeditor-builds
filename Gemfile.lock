@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ckeditor-builds (10.0.1)
+    ckeditor-builds (10.1.0)
 
 GEM
   remote: https://rubygems.org/
